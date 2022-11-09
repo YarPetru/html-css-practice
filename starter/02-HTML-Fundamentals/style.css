@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  /* margin-bottom: 20px; */
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  float: left;
+}
+
+.navigation {
+  float: right;
+}
+
+.navigation > a {
+  margin-right: 40px;
+}
+
+.navigation > a:last-child {
+  margin-right: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.headshot {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.secondary-header {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.related {
+  list-style: none;
+}
+
+/* LHVA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rosybrown;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline dashed rosybrown;
+}
+
+a:active {
+  background-color: #444;
+}
+
+ul,
+ol {
+  margin-bottom: 20px;
+  /* margin-left: 20px; */
+}
+
+.post-list {
+  list-style: none;
+  margin-left: 0px;
+}
+
+li {
+  /* margin-left: 20px; */
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  clear: both;
+}
+
+.footer-paragraph {
+  margin-bottom: 0px;
+  font-size: 12px;
+}

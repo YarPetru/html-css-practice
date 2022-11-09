@@ -1,0 +1,232 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* #2b8a3e */
+/* #2f9e44  */
+/* #37b24d */
+/* #40c057 */
+/* #d3f9d8 */
+/* #ebfbee */
+
+/* #212529 */
+/* #343a40 */
+/* #495057 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Lato", sans-serif;
+  color: #343a40;
+  border-bottom: 4px solid #2b8a3e;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212529;
+  letter-spacing: -1px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 62px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #212529;
+}
+
+.header-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+/* FEATURES */
+.icon--advantages {
+  width: 36px;
+  color: #2b8a3e;
+  margin-bottom: 24px;
+}
+
+.features-title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #2b8a3e;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ebfbee;
+}
+
+.testimonial-author {
+  color: #d3f9d8;
+}
+
+/* CHAIRS */
+.chair {
+  border-radius: 16px;
+  box-shadow: 5px 5px 20px 8px rgba(80, 80, 80, 0.08);
+}
+
+.chair-box {
+  padding: 30px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 24px;
+  margin-left: 36px;
+  font-size: 20px;
+  color: #212529;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 44px;
+  font-size: 16px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.icon-characterictics {
+  width: 24px;
+  color: #2b8a3e;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: center;
+  color: #212529;
+}
+
+footer {
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #2b8a3e;
+  color: white;
+  font-weight: 700;
+
+  border-radius: 50px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2f9e44;
+}
+
+.btn--small:link,
+.btn--small:visited {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+}
+
+.btn--big:link,
+.btn--big:visited {
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 12px 24px;
+}

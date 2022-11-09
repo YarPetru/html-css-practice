@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+a {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+.related {
+  list-style: none;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+/* LHVA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rosybrown;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline dashed rosybrown;
+}
+
+a:active {
+  background-color: #444;
+}

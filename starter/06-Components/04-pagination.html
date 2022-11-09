@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagination Component</title>
+
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /* #0b7285 */
+      /* #e3fafc */
+
+      /* #212529 */
+      /* #343a40 */
+      /* #495057 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        color: #343a40;
+        line-height: 1;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      .pagination {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+      }
+
+      .page:link,
+      .page:visited {
+        width: 36px;
+        height: 36px;
+        border: 2px solid white;
+        border-radius: 50%;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .page:hover,
+      .page:active {
+        border: 2px solid #0b7285;
+      }
+
+      .page--current:link,
+      .page--current:visited {
+        background-color: #0b7285;
+        color: white;
+      }
+
+      .btn {
+        border-radius: 50%;
+        border: 2px solid #0b7285;
+        outline: none;
+        padding: 8px;
+        background-color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #0b7285;
+      }
+
+      .btn:hover .btn-icon {
+        stroke: white;
+      }
+
+      .btn-icon {
+        stroke: #0b7285;
+        width: 28px;
+      }
+
+      .btn--left {
+        left: 0;
+      }
+
+      .btn--right {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button type="button" class="btn btn--left">
+        <svg
+          class="btn-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <!-- <div class="pages"> -->
+      <a href="#" class="page">1</a>
+      <a href="#" class="page page--current">2</a>
+      <a href="#" class="page">3</a>
+      <a href="#" class="page">4</a>
+      <a href="#" class="page">5</a>
+      <a href="#" class="page">6</a>
+      <a href="#" class="page">7</a>
+      <span>...</span>
+      <a href="#" class="page">23</a>
+      <!-- </div> -->
+      <button type="button" class="btn btn--right">
+        <svg
+          class="btn-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
