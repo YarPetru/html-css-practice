@@ -231,3 +231,459 @@
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
+/* **************** */
+/*  -----Meals----- */
+/* **************** */
+
+.section-meals {
+  background-color: #fdf2e9;
+  padding: 8rem 0 8rem 0;
+}
+
+.meal-card {
+  border-radius: 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  background-color: white;
+
+  transition: all 300ms;
+}
+
+.meal-card:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #51cf66;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tag--vegan {
+  background-color: #82c91e;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--paleo {
+  background-color: #fcc419;
+}
+
+.meal-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.meal-atributes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.meal-atributes-item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/* .check {
+  height: 1.8rem;
+  width: 1.8rem;
+} */
+
+/* diets */
+
+.diets {
+  align-self: start;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* testimonials */
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  /* padding: 8rem; */
+}
+
+.testimonials-container {
+  padding: 8rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial {
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-author {
+  color: #777;
+  font-size: 1.4rem;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  transition: all 500ms;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* ****************** */
+/*  -----Pricing----- */
+/* ****************** */
+
+.section-pricing {
+  background-color: #fdf2e9;
+  padding: 8rem 0 8rem 0;
+}
+
+.pricing-plan {
+  background-color: white;
+  padding: 4.8rem;
+  border-radius: 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+  width: 75%;
+}
+
+.pricing-plan:nth-child(1) {
+  justify-self: end;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #b8651b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2.4rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.plan-price span {
+  font-size: 3.6rem;
+  /* font-weight: 500; */
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #777;
+}
+
+.plan-sign-up {
+  /* margin-top: auto; */
+  text-align: center;
+  margin-top: 3.2rem;
+}
+
+.list-and-button-wrapper {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-plan--starter {
+  /* background-color: #fdf2e9; */
+}
+
+.pricing-plan--complete {
+  outline: 2px solid #e67e22;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  position: absolute;
+  top: 7%;
+  right: -15%;
+
+  content: "Best value";
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 1.6rem 6.4rem;
+  background-color: #fcc419;
+  color: #333;
+  transform: rotate(45deg);
+}
+
+.plan-details {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* Features */
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.feature-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 50%;
+  /* border: 1px solid #e67e22; */
+}
+
+/* ****************** */
+/*  -------CTA------- */
+/* ****************** */
+
+.section-cta {
+  padding: 8rem 0 9.6rem 0;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to left top, #e67e22, #eea564);
+}
+
+.cta-text-box {
+  padding: 4rem 4.8rem 4.8rem 4.8rem;
+  color: #45260a;
+}
+
+.cta-text-box .heading-secondary {
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: inherit;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to left top,
+      rgba(230, 125, 34, 0.3),
+      rgba(238, 164, 100, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: #fdf2e9;
+  padding: 1.2rem;
+  /* outline: none; */
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px #45260a;
+  width: 100%;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.33);
+}
+
+/* ****************** */
+/*  ------FOOTER----- */
+/* ****************** */
+
+.footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+.social-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  /* margin-bottom: 1rem; */
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #555;
+  margin-top: auto;
+}
+
+.footer-heading {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #555;
+  transition: all 300ms;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.address-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  margin-top: auto;
+
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+.address {
+  color: #333;
+  margin-bottom: 4.8rem;
+}
