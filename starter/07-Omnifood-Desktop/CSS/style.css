@@ -11,6 +11,7 @@
   /* Useful TO DO Header Sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -20,8 +21,33 @@
 .main-nav {
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="menu"] {
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
 .main-nav-list {
   display: flex;
+  align-items: center;
   gap: 3.2rem;
   list-style: none;
 }
@@ -31,6 +57,7 @@
 
 .nav-item-link:link,
 .nav-item-link:visited {
+  display: inline-block;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.6rem;
@@ -462,6 +489,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pricing-plan--starter {

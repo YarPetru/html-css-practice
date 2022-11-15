@@ -12,10 +12,12 @@
     />
     <link rel="stylesheet" href="/CSS/common.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/media-queries.css" />
+
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <a href="#">
         <img src="/img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
       </a>
@@ -38,6 +40,11 @@
           </li>
         </ul>
       </nav>
+      <!-- mobile menu -->
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -269,7 +276,7 @@
             </div>
           </div>
           <div class="diets">
-            <h3 class="heading-tertiary">Omnifood works with any diet</h3>
+            <h3 class="heading-tertiary">Works with any diet:</h3>
             <ul class="list">
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark"></ion-icon>
@@ -509,9 +516,7 @@
                 </li>
               </ul>
               <div class="plan-sign-up">
-                <a href="#" class="btn btn--full margin-right-sm"
-                  >Start eating well</a
-                >
+                <a href="#" class="btn btn--full">Start eating well</a>
               </div>
             </div>
           </div>
@@ -543,9 +548,7 @@
                 </li>
               </ul>
               <div class="plan-sign-up">
-                <a href="#" class="btn btn--full margin-right-sm"
-                  >Start eating well</a
-                >
+                <a href="#" class="btn btn--full">Start eating well</a>
               </div>
             </div>
           </div>
