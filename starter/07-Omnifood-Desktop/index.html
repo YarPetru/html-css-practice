@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!"
+    />
+
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
       rel="stylesheet"
@@ -14,29 +24,29 @@
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/media-queries.css" />
 
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
-    <header class="header nav-open">
+    <header class="header">
       <a href="#">
         <img src="/img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="nav-item">
-            <a href="#" class="nav-item-link">How it works</a>
+            <a href="#how" class="nav-item-link">How it works</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-item-link">Meals</a>
+            <a href="#meals" class="nav-item-link">Meals</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-item-link">Testimonials</a>
+            <a href="#testimonials" class="nav-item-link">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-item-link">Pricing</a>
+            <a href="#pricing" class="nav-item-link">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-item-link nav-cta">Try for free</a>
+            <a href="#cta" class="nav-item-link nav-cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -58,10 +68,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-faces margin-right-sm">
                 <img
@@ -103,14 +113,15 @@
           <div class="hero-image-box">
             <img
               class="hero-img"
-              src="/img/hero.png"
-              alt="The collage with different dishes"
+              src="/img/hero.webp"
+              alt="The collage with different
+            dishes"
             />
           </div>
         </div>
       </section>
 
-      <section class="section-featured">
+      <section class="section-featured" id="featured">
         <div class="container">
           <h2 class="heading-featured">As featured in</h2>
           <div class="logos">
@@ -143,7 +154,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -210,7 +221,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Sample meals</span>
           <h2 class="heading-secondary">
@@ -323,7 +334,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -482,7 +493,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -607,7 +618,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta-grid">
             <div class="cta-text-box">
@@ -618,10 +629,11 @@
                 first meal is on us!
               </p>
 
-              <form action="#" class="cta-form">
+              <form action="#" class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
+                    name="full-name"
                     id="full-name"
                     type="text"
                     placeholder="Your Name"
@@ -632,6 +644,7 @@
                 <div>
                   <label for="email">Email address</label>
                   <input
+                    name="email"
                     id="email"
                     type="email"
                     placeholder="Your Email"
@@ -695,7 +708,9 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifoon Inc. All right reserved
+            Copyright &copy;
+            <span class="year"></span>
+            by Omnifoon Inc. All right reserved
           </p>
         </div>
         <div class="address-col">
@@ -753,6 +768,11 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./js/scripts.js"></script>
+    <script
+      defer
+      scr="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
   </body>
 </html>

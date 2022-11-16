@@ -18,9 +18,6 @@
   height: 2.4rem;
 }
 
-.main-nav {
-}
-
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -38,9 +35,6 @@
   color: #333;
 }
 
-.icon-mobile-nav[name="menu"] {
-}
-
 .icon-mobile-nav[name="close"] {
   display: none;
 }
@@ -50,9 +44,6 @@
   align-items: center;
   gap: 3.2rem;
   list-style: none;
-}
-
-.nav-item {
 }
 
 .nav-item-link:link,
@@ -81,6 +72,25 @@
 .nav-item-link.nav-cta:hover,
 .nav-item-link.nav-cta:active {
   background-color: #b8651b;
+}
+
+/* Sticky nav */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.06);
+  z-index: 999;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /* **************** */
